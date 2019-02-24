@@ -1,0 +1,41 @@
+# Calibration/detection
+ CALIBRATION_MODE_: false
+ DETECT_: true
+
+# Shape filtering parameters:
+ THRES_AREA_: 0.70
+
+# Color filtering parameters:
+ B_H_MAX_: 140 #in opencv mas is 180
+ B_H_MIN_: 90
+ B_S_MAX_: 255
+ B_S_MIN_: 60
+ B_V_MAX_: 255
+ B_V_MIN_: 0
+      
+ Y_H_MAX_: 50 #in opencv mas is 180
+ Y_H_MIN_: 10
+ Y_S_MAX_: 255
+ Y_S_MIN_: 120
+ Y_V_MAX_: 255
+ Y_V_MIN_: 70
+
+#For puck picked up         
+ POLE_TOP_X_: 275
+ POLE_TOP_Y_: 0
+ POLE_WIDTH_: 260
+ POLE_HEIGHT_: 390              
+ BOTTOM_TOP_X_: 125
+ BOTTOM_TOP_Y_: 330    
+ BOTTOM_WIDTH_: 510
+ BOTTOM_HEIGHT_: 150
+
+
+# Track parameter for puck pick up
+#puck tracking parameter
+ TEAM_COLOR_: 1 #1 is yellow, 0 is blue
+ MAX_NUM_OBJECTS_: 35
+ CAMERA_CENTER_OFFSET_: -27
+ MIN_OBJECT_AREA_: 600 #20*30
+ MAX_OBJECT_AREA_: 261120 #680*480*0.8 
+

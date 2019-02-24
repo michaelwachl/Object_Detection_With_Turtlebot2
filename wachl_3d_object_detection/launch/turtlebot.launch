@@ -1,0 +1,12 @@
+<launch>
+<!-- ================================================================== -->
+    <!-- == Launch all turtlebot necessary launch files =================== -->
+    <!-- ================================================================== -->
+ 	<include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+   <include file="$(find wachl_3d_object_detection)/launch/object_detection.launch"/>
+	<include file="$(find turtlebot_bringup)/launch/3dsensor.launch" />
+<!--	<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 /map /odom 100"/>
+	<node pkg="tf" type="static_transform_publisher" name="map_to_goal" args="4 3 0 0 0 0 /odom /goal_to_attack 100"/>
+	<node pkg="tf" type="static_transform_publisher" name="map_to_puck" args="2 2 0 0 0 0 /odom /our_puck0 100"/> -->
+	<node pkg="localization" name="michael" type="localization_node" output="screen" />
+</launch>

@@ -1,0 +1,9 @@
+int8 PUCK_RADIUS
+int8 ROBOT_RADIUS
+int8 POST_RADIUS
+float32 a
+float32 b
+string goal
+---
+geometry_msgs/PoseArray path
+bool success

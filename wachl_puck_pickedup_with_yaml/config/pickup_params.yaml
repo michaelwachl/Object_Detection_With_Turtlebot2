@@ -1,0 +1,28 @@
+# Calibration
+CALIBRATION_MODE_: true
+
+# Shape filtering parameters:
+THRES_AREA_: 0.75
+
+# Color filtering parameters:
+H_MIN_: 0
+H_MAX_: 180 #in opencv mas is 180
+S_MIN_: 0
+S_MAX_: 255
+V_MIN_: 0
+V_MAX_: 255
+
+Y_H_MIN_: 10
+Y_H_MAX_: 50
+Y_S_MIN_: 120
+Y_S_MAX_: 255
+Y_V_MIN_: 70
+Y_V_MAX_: 255
+
+B_H_MIN_: 90
+B_H_MAX_: 140
+B_S_MIN_: 0
+B_S_MAX_: 255
+B_V_MIN_: 0
+B_V_MAX_: 255
+

@@ -1,0 +1,55 @@
+ 
+  CONSOLE_OUTPUT_: true  
+# Show Pointclouds, only if node runs on computer!
+  VISIU_: false
+
+# Prefiltering parameter:
+  LEAF_SIZE_: 0.01
+  MAX_DEPTH_: 0.25
+  MAX_WIDTH_: 0.35
+
+  CLUSTER_MAX_: 600
+  CLUSTER_MIN_: 30
+  CLUSTER_TOLERANCE_: 0.04
+
+# Shape filtering parameters:
+  PLANE_RATIO_: 0.3
+  ZYLINDER_RATIO_: 0.28
+  Y_LIM_MAX_: 0.13
+  Y_LIM_MIN_: 0.06
+  Z_LIM_MAX_: 3.0
+  Z_LIM_MIN_: 0.0
+
+  ROBO_HEIGHT_MAX_: 0.2
+  ROBO_HEIGHT_MIN_: 0.11
+  ROBO_WIDTH_MAX_: 0.34
+  ROBO_WIDTH_MIN_: 0.25
+
+
+# Color filtering parameters:
+  BLUE_RANGE_H_MAX_: 250.0
+  BLUE_RANGE_H_MIN_: 220.0
+  BLUE_RANGE_S_MAX_: 0.5
+  BLUE_RANGE_S_MIN_: 0.1
+  BLUE_RANGE_V_MAX_: 1.0
+  BLUE_RANGE_V_MIN_: 0.1
+
+  YELLOW_RANGE_H_MAX_: 70.0
+  YELLOW_RANGE_H_MIN_: 20.0
+  YELLOW_RANGE_S_MAX_: 1.0
+  YELLOW_RANGE_S_MIN_: 0.4
+  YELLOW_RANGE_V_MAX_: 1.0
+  YELLOW_RANGE_V_MIN_: 0.3
+
+  GREEN_RANGE_H_MAX_: 170.0
+  GREEN_RANGE_H_MIN_: 72.0
+  GREEN_RANGE_S_MAX_: 1.0
+  GREEN_RANGE_S_MIN_: 0.2
+  GREEN_RANGE_V_MAX_: 1.0
+  GREEN_RANGE_V_MIN_: 0.2
+
+  DARK_RANGE_: 0.2
+  BLUE_RATIO_: 0.5
+  DARK_RATIO_: 0.5
+  GREEN_RATIO_: 0.5
+  YELLOW_RATIO_: 0.45

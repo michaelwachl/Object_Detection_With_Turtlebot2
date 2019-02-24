@@ -1,0 +1,16 @@
+
+<launch>
+
+<!-- Pointcloud publishing node for testing -->
+<!-- <node pkg="pointcloud_pub" type="pointcloud_pub_node" name="pointcloud_pub" output="screen" launch-prefix="xterm -e"/> -->
+
+
+<!-- Start detection nodes -->
+<!-- Object detection node -->
+<node pkg="wachl_3d_object_detection" type="wachl_3d_object_detection_node" name="object_detection" output="screen">
+</node>
+
+<!-- Load dynamic parameter -->
+<node pkg="dynamic_reconfigure" name="dynamic_load_object_detection" type="dynparam" args="load /object_detection $(find wachl_3d_object_detection)/config/detection_params.yaml" />
+
+</launch>

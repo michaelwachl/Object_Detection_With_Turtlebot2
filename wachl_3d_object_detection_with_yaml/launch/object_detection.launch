@@ -1,0 +1,20 @@
+
+<launch>
+
+<!-- Pointcloud publishing node for testing -->
+<!-- <node pkg="pointcloud_pub" type="pointcloud_pub_node" name="pointcloud_pub" output="screen" launch-prefix="xterm -e"/> -->
+
+<!-- Object detection node -->
+<node pkg="wachl_3d_object_detection" type="wachl_3d_object_detection_node" name="object_detection" output="screen">
+<rosparam file="$(find wachl_3d_object_detection)/config/detection_params.yaml" command="load" />
+</node>
+
+
+<!-- Object detection node -->
+<node pkg="wachl_puck_pickedup" type="wachl_puck_pickedup_node" name="puck_pickedup" output="screen" launch-prefix="xterm -e">
+<rosparam file="$(find wachl_puck_pickedup)/config/pickup_params.yaml" command="load" />
+</node>
+
+
+
+</launch>

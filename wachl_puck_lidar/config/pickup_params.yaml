@@ -1,0 +1,6 @@
+# Calibration/detection
+ DETECT_: true
+
+#scan area
+ SCAN_WIDTH_: 0.4
+ SCAN_DEPTH_: 0.6 
